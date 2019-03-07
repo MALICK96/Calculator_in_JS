@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="container">
+        <h2>Calculator</h2>
+        <p>This Calculator perform a basic arthmetic calculations</p>
+
+        <!-- Form for the calculation -->
+        <form action="" method="post" name="calculator" id="get_form">
+            <label for="firstNumber">Enter first number: &nbsp;&nbsp;</label>
+            <input type="text" name="firstNumber" id="firstNumber"><br>
+            Choose one operator:&nbsp;
+            <select name="operator" id="operator">
+                <option value="+">Add </option>
+                <option value="-">Substract</option>
+                <option value="*">Multiply</option>
+                <option value="/">Divide</option>
+                <option value="%">Modulus</option>
+            </select><br>
+            <label for="secondNumber">Enter second number: </label>
+            <input type="text" name="secondNumber" id="secondNumber"><br>
+            <input type="submit" name="submit" id="submit" value="Calculate">
+        </form>
+
+        <!-- This div will be used to write inside of it the result of the calculation -->
+        <div id="wrapper">
+            <h2>Result</h2>
+            <div id="res">
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to external script -->
+    <script src="simple_calculator.js"></script>
+</body>
+</html>

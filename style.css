@@ -1,0 +1,119 @@
+/* Reset the browser default style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background of the page */
+body {
+    background-color:  #fff;;
+}
+
+/* Style the container element */
+#container {
+    color: #fff;
+    width: 50%;
+    background-color: #111;
+    border: 1px solid #111;
+    margin: 20px auto;
+    padding: 20px;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 10px 5px 5px #939396;
+}
+
+/* Style for the h2 element inside the section element with the id */
+section#container h2 {
+    border: 1px solid #555;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color:#1e90ff;
+    opacity: 0.7;
+    color: #111;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section#container h2:hover {
+    opacity: 1;
+    color: #fff;
+    background-color: #1e3799;
+    transition: 2s;
+}
+
+/* The paragraphe */
+section#container p {
+    padding-bottom: 10px;
+}
+
+/* Style the h2 elements */
+h2, div#wrapper h2{
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+       
+}
+
+/* Style the form elements */
+form input[type="text"] {
+    margin: 10px 5px;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #4b7bec;
+    
+}
+
+select {
+    padding: 5px;
+    color: #2f3542;
+    background-color: #dfe4ea;
+}
+
+
+/* Group the two element and specify the common style to them */
+div#wrapper h2, input[type="submit"] {
+    width: 25%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    border-radius: 10%;
+    color: black;
+    opacity: 0.7;
+}
+
+/* Style the h2 element insidee the #wrapper div */
+div#wrapper h2{
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+    bottom: 55px;
+    background-color: #26de81;
+}
+
+/* Add transition and some style to the selected element when hovered*/
+input[type="submit"]:hover {
+    opacity: 1;
+    color: #fff;
+    background-color: #0652DD;
+    transition: 2s;
+}
+
+div#wrapper h2:hover {
+    opacity: 1;
+    background-color: #20bf6b;
+    color: #fff;
+    transition: 2s;
+}
+
+/* Postion the contain of the div element */
+div#res {
+    position: relative;
+    bottom: 60px;
+    text-align: center;
+
+}
