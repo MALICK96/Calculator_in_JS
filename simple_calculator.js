@@ -47,32 +47,22 @@ function calculate()
          * */
         if(selection_made && (firstNumber && secondNumber))
         {
-            // Switched to the matched case based on the operator variable
-            switch(operator)
-            {
-                case "+":
-                    result = firstNumber + secondNumber;
-                    break;
-                case "-":
-                    result = firstNumber - secondNumber;
-                    break;
-                case "*":
-                    result = firstNumber * secondNumber;
-                    break;
-                case "/":
-                    result = firstNumber / secondNumber;
-                    break;
-                case "%":
-                    result = firstNumber % secondNumber;
-                    break;
-                default:
-                    alert("Error! wrong operator type must choose only one between (+,-,*,/,%) these operator.");
-            }
-            
-        }
+            //Use an object to hold the computed value of each operator
+          
+            var operatorObj = {
+                "+": firstNumber + secondNumber,
+                "-": firstNumber - secondNumber,
+                "*": firstNumber * secondNumber,
+                "/": firstNumber / secondNumber,
+                "%": firstNumber % secondNumber
+            };
+
+            // Access the value of the operator in the Operator object
+            result = operatorObj[operator];
+        }           
         else
         {
-            alert("Error! the input field is empty or  invalid\nThe input field must contains only numbers or digit and you must choose one operator to perform calculation.");
+            alert("Error! the input field is empty or  invalid.\nThe input field must contains only numbers or digits.\nYou must also choose one operator to perform calculation.");
         }
 
         if(firstNumber && secondNumber > 0)
